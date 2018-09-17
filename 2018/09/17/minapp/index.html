@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="微信小程序,nodejs,nginx,反向代理," />
 
 
 
@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="你是什么样的人，便会遇到什么样的人；你想遇到什么样的人，就得先让自己成为那样的人。">
-<meta name="keywords" content="前端,js,jQuery,nodejs,javascript,html5,程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="千三111">
-<meta property="og:url" content="http://yoursite.com/archives/2018/09/index.html">
+<meta name="description" content="自己尝试着用nodejs撘个后台服务的时候，本地和postman测试都ok，但是在小程序中使用的时候，报错说“配置的域名不在request合法域名中” 明明已经配置好了的啊，看着报错信息，仔细对比了一下两个url请求地址，发现是由于链接中添加了端口号造成的报错，去掉端口号后不报“合法域名”的错误了，但是也请求不到需要的数据了。想到后台服务中是有端口号的，必须用url+端口号进行请求才可以获取到数据">
+<meta name="keywords" content="微信小程序,nodejs,nginx,反向代理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序 request域名配置好之后，还是报错配置的域名不在request合法域名中">
+<meta property="og:url" content="http://yoursite.com/2018/09/17/minapp/index.html">
 <meta property="og:site_name" content="千三111">
-<meta property="og:description" content="你是什么样的人，便会遇到什么样的人；你想遇到什么样的人，就得先让自己成为那样的人。">
+<meta property="og:description" content="自己尝试着用nodejs撘个后台服务的时候，本地和postman测试都ok，但是在小程序中使用的时候，报错说“配置的域名不在request合法域名中” 明明已经配置好了的啊，看着报错信息，仔细对比了一下两个url请求地址，发现是由于链接中添加了端口号造成的报错，去掉端口号后不报“合法域名”的错误了，但是也请求不到需要的数据了。想到后台服务中是有端口号的，必须用url+端口号进行请求才可以获取到数据">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/minapp1.png">
+<meta property="og:image" content="http://yoursite.com/images/minapp3.png">
+<meta property="og:updated_time" content="2018-09-17T08:21:45.407Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="千三111">
-<meta name="twitter:description" content="你是什么样的人，便会遇到什么样的人；你想遇到什么样的人，就得先让自己成为那样的人。">
+<meta name="twitter:title" content="微信小程序 request域名配置好之后，还是报错配置的域名不在request合法域名中">
+<meta name="twitter:description" content="自己尝试着用nodejs撘个后台服务的时候，本地和postman测试都ok，但是在小程序中使用的时候，报错说“配置的域名不在request合法域名中” 明明已经配置好了的啊，看着报错信息，仔细对比了一下两个url请求地址，发现是由于链接中添加了端口号造成的报错，去掉端口号后不报“合法域名”的错误了，但是也请求不到需要的数据了。想到后台服务中是有端口号的，必须用url+端口号进行请求才可以获取到数据">
+<meta name="twitter:image" content="http://yoursite.com/images/minapp1.png">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/09/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/17/minapp/"/>
 
 
 
 
 
-  <title>归档 | 千三111</title>
+  <title>微信小程序 request域名配置好之后，还是报错配置的域名不在request合法域名中 | 千三111</title>
   
 
 
@@ -144,7 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -302,111 +306,219 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/17/minapp/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="青芒">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/21999350?s=400&u=65f6fc0b502b5456c9e0ec490ba3549e9a477669&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="千三111">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/17/minapp/" itemprop="url">
-              
-                <span itemprop="name">微信小程序 request域名配置好之后，还是报错配置的域名不在request合法域名中</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">微信小程序 request域名配置好之后，还是报错配置的域名不在request合法域名中</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-17T15:28:18+08:00"
-              content="2018-09-17" >
-          09-17
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-17T15:28:18+08:00">
+                2018-09-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/微信小程序/" itemprop="url" rel="index">
+                    <span itemprop="name">微信小程序</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/17/minapp/" class="leancloud_visitors" data-flag-title="微信小程序 request域名配置好之后，还是报错配置的域名不在request合法域名中">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/05/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-05T13:35:08+08:00"
-              content="2018-09-05" >
-          09-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <p>自己尝试着用nodejs撘个后台服务的时候，本地和postman测试都ok，但是在小程序中使用的时候，报错说<font color="#f44336">“配置的域名不在request合法域名中”</font><br><img src="/images/minapp1.png"></p>
+<p>明明已经配置好了的啊，看着报错信息，仔细对比了一下两个url请求地址，发现是由于<font color="#f44336">链接中添加了端口号</font>造成的报错，<font color="#f44336">去掉端口号后不报“合法域名”的错误了</font>，但是也请求不到需要的数据了。想到后台服务中是有端口号的，必须用<font color="#f44336">url+端口号</font>进行请求才可以获取到数据，遂直接更改后台项目中的端口号为443，但是问题依然没有解决，最后突然想到用<font color="#f44336">nginx反向代理</font>试试，把后台服务端口号改回之前的，然后nginx反向代理到此端口号，保存修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">    proxy_pass https://127.0.0.1:8081;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>重启nginx服务</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service nginx restart</span><br></pre></td></tr></table></figure></p>
+<p><strong>请求成功</strong><br><img src="/images/minapp3.png"></p>
+<p><strong><em>ps：小程序中的网络请求不能有端口号且必须是https请求</em></strong></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="青芒 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/微信小程序/" rel="tag"># 微信小程序</a>
+          
+            <a href="/tags/nodejs/" rel="tag"># nodejs</a>
+          
+            <a href="/tags/nginx/" rel="tag"># nginx</a>
+          
+            <a href="/tags/反向代理/" rel="tag"># 反向代理</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/05/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -414,6 +526,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -677,6 +793,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
