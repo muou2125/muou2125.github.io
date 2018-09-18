@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[微信小程序 request域名配置好之后，还是报错配置的域名不在request合法域名中]]></title>
     <url>%2F2018%2F09%2F17%2Fminapp%2F</url>
-    <content type="text"><![CDATA[自己尝试着用nodejs撘个后台服务的时候，本地和postman测试都ok，但是在小程序中使用的时候，报错说“配置的域名不在request合法域名中” 明明已经配置好了的啊，看着报错信息，仔细对比了一下两个url请求地址，发现是由于链接中添加了端口号造成的报错，去掉端口号后不报“合法域名”的错误了，但是也请求不到需要的数据了。 想到后台服务中是有端口号的，必须用url+端口号进行请求才可以获取到数据，遂直接更改后台项目中的端口号为443，但是问题依然没有解决，最后突然想到用nginx反向代理试试，把后台服务端口号改回之前的，然后nginx反向代理到此端口号，保存修改123location / &#123; proxy_pass https://127.0.0.1:8081;&#125; 重启nginx服务1service nginx restart 请求成功 ps：小程序中的网络请求不能有端口号且必须是https请求]]></content>
+    <content type="text"><![CDATA[自己尝试着用nodejs搭个后台服务的时候，本地和postman测试都ok，但是在小程序中使用的时候，报错说“配置的域名不在request合法域名中” 明明已经配置好了的啊，看着报错信息，仔细对比了一下两个url请求地址，发现是由于链接中添加了端口号造成的报错，去掉端口号后不报“合法域名”的错误了，但是也请求不到需要的数据了。 想到后台服务中是有端口号的，必须用url+端口号进行请求才可以获取到数据，遂直接更改后台项目中的端口号为443，但是问题依然没有解决，最后突然想到用nginx反向代理试试，把后台服务端口号改回之前的，然后nginx反向代理到此端口号，保存修改123location / &#123; proxy_pass https://127.0.0.1:8081;&#125; 重启nginx服务1service nginx restart 请求成功 ps：小程序中的网络请求不能有端口号且必须是https请求]]></content>
       <categories>
         <category>微信小程序</category>
       </categories>
