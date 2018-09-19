@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 千三111
+title: 千三
 subtitle: 少年壮志当凌云 仗剑携酒江湖行
 description: 你是什么样的人，便会遇到什么样的人；你想遇到什么样的人，就得先让自己成为那样的人。
 keywords: "前端,js,jQuery,nodejs,javascript,html5,程序猿"
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://b.himnt.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
